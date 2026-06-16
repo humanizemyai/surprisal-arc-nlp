@@ -5,7 +5,7 @@ token-surprisal trajectory predicts neither human-vs-AI authorship nor human-jud
 What carries signal is the *level* and *variance* of surprisal — consistent with Uniform Information
 Density, not "managed-surprise" aesthetics.
 
-Research by **Berk Ustun**. Independent public benchmarks only (no in-house data). Full write-up in
+Research by **Fırat Mıhcı**. Independent public benchmarks only (no in-house data). Full write-up in
 [`paper/paper.md`](paper/paper.md); results ledger in [`tables/SUMMARY.md`](tables/SUMMARY.md).
 
 ## TL;DR results (5-fold ROC-AUC; LM = gpt2, replicated with Pythia-410m)

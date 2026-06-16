@@ -1,6 +1,6 @@
 # There Is No Aesthetic Surprisal Arc: What Token Surprisal Does and Doesn't Reveal About Machine-Generated Text and Writing Quality
 
-**Berk Ustun**¹
+**Fırat Mıhcı**¹
 
 ¹ Independent researcher (computational linguistics). Correspondence: hello@humanizemy.ai
 
