@@ -1,0 +1,67 @@
+{
+  "dataset": "MAGE/GPT4-OOD (CNN)",
+  "lm": "gpt2",
+  "device": "mps",
+  "n": {
+    "human": 250,
+    "ai_raw": 250,
+    "ai_para": 250
+  },
+  "domains": [
+    "cnn",
+    "dialogsum",
+    "imdb",
+    "pubmed"
+  ],
+  "results": {
+    "A_raw  (human vs GPT4)": {
+      "mean_perplexity": {
+        "auc_mean": 0.8032,
+        "auc_std": 0.0406
+      },
+      "burstiness": {
+        "auc_mean": 0.8055,
+        "auc_std": 0.0359
+      },
+      "arc_shape": {
+        "auc_mean": 0.511,
+        "auc_std": 0.0295
+      },
+      "mean+burst": {
+        "auc_mean": 0.8524,
+        "auc_std": 0.0399
+      },
+      "all": {
+        "auc_mean": 0.8434,
+        "auc_std": 0.041
+      }
+    },
+    "B_para (human vs GPT4-paraphrased)": {
+      "mean_perplexity": {
+        "auc_mean": 0.5949,
+        "auc_std": 0.055
+      },
+      "burstiness": {
+        "auc_mean": 0.7894,
+        "auc_std": 0.0248
+      },
+      "arc_shape": {
+        "auc_mean": 0.529,
+        "auc_std": 0.0296
+      },
+      "mean+burst": {
+        "auc_mean": 0.8564,
+        "auc_std": 0.0249
+      },
+      "all": {
+        "auc_mean": 0.8484,
+        "auc_std": 0.0215
+      }
+    }
+  },
+  "summary": {
+    "mean_burst_drop_raw_to_para": -0.004,
+    "arc_auc_para": 0.529,
+    "arc_increment_para": -0.008
+  }
+}

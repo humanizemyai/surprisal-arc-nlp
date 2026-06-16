@@ -1,0 +1,107 @@
+{
+  "lm": "EleutherAI/pythia-410m",
+  "device": "mps",
+  "E1_hc3": {
+    "mean": 0.96,
+    "burst": 0.972,
+    "arc": 0.532,
+    "mean+burst": 0.973
+  },
+  "E2_mage_raw": {
+    "mean": 0.826,
+    "burst": 0.831,
+    "arc": 0.534,
+    "mean+burst": 0.866
+  },
+  "E2_mage_para": {
+    "mean": 0.55,
+    "burst": 0.773,
+    "arc": 0.528,
+    "mean+burst": 0.843
+  },
+  "E2_per_domain": {
+    "cnn": {
+      "n": [
+        76,
+        77,
+        70
+      ],
+      "raw": {
+        "mean": 0.733,
+        "burst": 0.838,
+        "arc": 0.532,
+        "mean+burst": 0.842
+      },
+      "para": {
+        "mean": 0.697,
+        "burst": 0.902,
+        "arc": 0.407,
+        "mean+burst": 0.903
+      }
+    },
+    "dialogsum": {
+      "n": [
+        63,
+        60,
+        64
+      ],
+      "raw": {
+        "mean": 0.799,
+        "burst": 0.877,
+        "arc": 0.536,
+        "mean+burst": 0.864
+      },
+      "para": {
+        "mean": 0.66,
+        "burst": 0.807,
+        "arc": 0.562,
+        "mean+burst": 0.795
+      }
+    },
+    "imdb": {
+      "n": [
+        81,
+        87,
+        89
+      ],
+      "raw": {
+        "mean": 0.979,
+        "burst": 0.93,
+        "arc": 0.513,
+        "mean+burst": 0.986
+      },
+      "para": {
+        "mean": 0.85,
+        "burst": 0.847,
+        "arc": 0.477,
+        "mean+burst": 0.965
+      }
+    },
+    "pubmed": {
+      "n": [
+        80,
+        76,
+        77
+      ],
+      "raw": {
+        "mean": 0.918,
+        "burst": 0.935,
+        "arc": 0.667,
+        "mean+burst": 0.935
+      },
+      "para": {
+        "mean": 0.712,
+        "burst": 0.73,
+        "arc": 0.526,
+        "mean+burst": 0.787
+      }
+    }
+  },
+  "E3_asap": {
+    "cv_r2_baseline": 0.3373,
+    "cv_r2_arc": 0.3341,
+    "cv_r2_delta": -0.0032,
+    "arc_F": 1.182,
+    "arc_p": 0.3064286963877719
+  }
+}

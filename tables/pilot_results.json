@@ -1,0 +1,42 @@
+{
+  "dataset": "HC3/open_qa",
+  "lm": "gpt2",
+  "device": "mps",
+  "n_human": 100,
+  "n_ai": 100,
+  "config": {
+    "arc": {
+      "resample_len": 64,
+      "smooth_window": 5,
+      "n_fft_coeffs": 8
+    },
+    "detect": {
+      "cv_folds": 5,
+      "seed": 42
+    },
+    "min_words": 40
+  },
+  "results": {
+    "mean_perplexity": {
+      "auc_mean": 0.969,
+      "auc_std": 0.021
+    },
+    "burstiness": {
+      "auc_mean": 0.9525,
+      "auc_std": 0.0302
+    },
+    "arc_shape": {
+      "auc_mean": 0.5515,
+      "auc_std": 0.1001
+    },
+    "all": {
+      "auc_mean": 0.969,
+      "auc_std": 0.0292
+    }
+  },
+  "gate": {
+    "arc_shape": 0.5515,
+    "burstiness": 0.9525,
+    "passed": false
+  }
+}

@@ -1,0 +1,22 @@
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Large model caches + raw dataset downloads
+models/
+hf_cache/
+*.bin
+data/raw/
+data/processed/*.parquet
+*_log.txt
+
+# Build artifacts
+paper/*.pdf
+paper/*.rendered.html
+!figures/*.png

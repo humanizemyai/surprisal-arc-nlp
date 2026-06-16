@@ -1,0 +1,24 @@
+# Surprisal Arc — study configuration
+
+surprisal:
+  models:
+    - gpt2                      # pilot LM (124M)
+    # - EleutherAI/pythia-410m  # second LM for robustness (full study)
+  device: auto                  # cuda > mps > cpu
+  max_tokens: 512               # truncate long texts for surprisal extraction
+
+arc:
+  resample_len: 64              # each text's surprisal resampled to this length
+  smooth_window: 5              # moving-average low-pass window (-> T(t))
+  n_fft_coeffs: 8               # # low-frequency FFT magnitudes = arc-shape feature
+
+pilot:
+  dataset: Hello-SimpleAI/HC3   # human vs ChatGPT answer pairs
+  config: open_qa
+  n_per_class: 100
+  min_words: 40                 # drop very short answers (arc needs length)
+  seed: 42
+
+detect:
+  cv_folds: 5
+  seed: 42

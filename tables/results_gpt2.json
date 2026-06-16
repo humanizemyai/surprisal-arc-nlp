@@ -1,0 +1,107 @@
+{
+  "lm": "gpt2",
+  "device": "mps",
+  "E1_hc3": {
+    "mean": 0.969,
+    "burst": 0.953,
+    "arc": 0.552,
+    "mean+burst": 0.967
+  },
+  "E2_mage_raw": {
+    "mean": 0.804,
+    "burst": 0.804,
+    "arc": 0.52,
+    "mean+burst": 0.842
+  },
+  "E2_mage_para": {
+    "mean": 0.58,
+    "burst": 0.781,
+    "arc": 0.517,
+    "mean+burst": 0.845
+  },
+  "E2_per_domain": {
+    "cnn": {
+      "n": [
+        76,
+        77,
+        70
+      ],
+      "raw": {
+        "mean": 0.729,
+        "burst": 0.825,
+        "arc": 0.465,
+        "mean+burst": 0.831
+      },
+      "para": {
+        "mean": 0.683,
+        "burst": 0.937,
+        "arc": 0.439,
+        "mean+burst": 0.939
+      }
+    },
+    "dialogsum": {
+      "n": [
+        63,
+        60,
+        64
+      ],
+      "raw": {
+        "mean": 0.738,
+        "burst": 0.882,
+        "arc": 0.529,
+        "mean+burst": 0.877
+      },
+      "para": {
+        "mean": 0.644,
+        "burst": 0.793,
+        "arc": 0.492,
+        "mean+burst": 0.8
+      }
+    },
+    "imdb": {
+      "n": [
+        81,
+        87,
+        89
+      ],
+      "raw": {
+        "mean": 0.966,
+        "burst": 0.883,
+        "arc": 0.434,
+        "mean+burst": 0.989
+      },
+      "para": {
+        "mean": 0.837,
+        "burst": 0.85,
+        "arc": 0.442,
+        "mean+burst": 0.959
+      }
+    },
+    "pubmed": {
+      "n": [
+        80,
+        76,
+        77
+      ],
+      "raw": {
+        "mean": 0.93,
+        "burst": 0.944,
+        "arc": 0.542,
+        "mean+burst": 0.949
+      },
+      "para": {
+        "mean": 0.797,
+        "burst": 0.789,
+        "arc": 0.55,
+        "mean+burst": 0.858
+      }
+    }
+  },
+  "E3_asap": {
+    "cv_r2_baseline": 0.3411,
+    "cv_r2_arc": 0.3399,
+    "cv_r2_delta": -0.0012,
+    "arc_F": 1.786,
+    "arc_p": 0.07568104969515985
+  }
+}
